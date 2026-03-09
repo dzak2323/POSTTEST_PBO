@@ -74,13 +74,13 @@ Merepresentasikan produk roti yang tersedia di etalase toko.
 ### 2. `BahanBaku.java`
 Merepresentasikan persediaan bahan di dapur/gudang toko.
 
-| Atribut | Tipe | Keterangan |
-|---|---|---|
-| `idBahan` | `String` | ID unik bahan (format: `B-xxx`) |
-| `namaBahan` | `String` | Nama bahan (contoh: Tepung) |
-| `kategori` | `String` | Kategori (Kering/Basah/Topping) |
-| `stok` | `double` | Jumlah ketersediaan bahan |
-| `satuan` | `String` | Satuan ukur (Kg, Gram, Liter) |
+| Atribut         | Tipe | Keterangan |
+|-----------------|---|---|
+| `idBahan`       | `String` | ID unik bahan (format: `B-xxx`) |
+| `namaBahan`     | `String` | Nama bahan (contoh: Tepung) |
+| `kategoriBahan` | `String` | Kategori (Kering/Basah/Topping) |
+| `stok`          | `double` | Jumlah ketersediaan bahan |
+| `satuanStok`     | `String` | Satuan ukur (Kg, Gram, Liter) |
 
 ### 3. `Pelanggan.java`
 Merepresentasikan data pelanggan yang terdaftar sebagai member.
@@ -95,7 +95,7 @@ Merepresentasikan data pelanggan yang terdaftar sebagai member.
 
 ### 4. `Main.java`
 Kelas utama yang menjalankan program. Berisi:
-- Loop menu utama dan sub-menu (while loop).
+- Loop menu utama dan sub-menu .
 - 3 buah `ArrayList` sebagai penyimpanan data in-memory untuk masing-masing class.
 - Operasi CRUD (Create, Read, Update, Delete) yang menerima input dari Scanner.
 
@@ -105,8 +105,8 @@ Kelas utama yang menjalankan program. Berisi:
 
 | No | Fitur | Deskripsi |
 |---|---|---|
-| 1 | **Tambah Data (Create)** | Input data baru untuk Roti, Bahan Baku, maupun Pelanggan. |
-| 2 | **Tampilkan Data (Read)** | Menampilkan daftar seluruh entitas dengan format rapi. |
+| 1 | **Tambah Data ** | Input data baru untuk Roti, Bahan Baku, maupun Pelanggan. |
+| 2 | **Tampilkan Data ** | Menampilkan daftar seluruh entitas dengan format rapi. |
 | 3 | **Update Data Roti** | Memperbarui nama, harga, atau stok roti berdasarkan urutan. |
 | 4 | **Hapus Data Roti** | Menghapus data roti dari etalase. |
 | 0 | **Keluar** | Mengakhiri program dengan aman. |
