@@ -35,6 +35,6 @@ public Roti(String idroti, String namaRoti, int harga, int stok) {
 
     //Print out
     public void tampilkaninfo() {
-        System.out.println("ID : " + idroti + "| Roti: " + namaRoti + "Harga : Rp" + harga + "sisa stok: " + stok);
+        System.out.println("ID : " + idroti + " |Roti: " + namaRoti + " |Harga : Rp" + harga + " |sisa stok: " + stok + " |Kode produksi" + kodeProduksi);
     }
 }

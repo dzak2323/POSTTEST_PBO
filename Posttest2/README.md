@@ -25,9 +25,9 @@
 
 ## Deskripsi Proyek
 
-Proyek ini merupakan **Sistem Manajemen Toko Roti** berbasis konsol (CLI) yang dibangun menggunakan Java. Aplikasi ini memungkinkan pengguna untuk mengelola operasional toko roti secara lengkap, mulai dari persediaan roti di etalase, stok bahan baku di gudang, hingga data member pelanggan.
+Proyek ini merupakan **Sistem Manajemen Toko Roti** berbasis konsol (CLI) serta sudah menggunakan Jansi sebagai tambahan untuk mempercantik tampilan yang dibangun menggunakan Java. Aplikasi ini memungkinkan pengguna untuk mengelola operasional toko roti secara lengkap, mulai dari persediaan roti di etalase, stok bahan baku di gudang, hingga data member pelanggan.
 
-Proyek ini dibuat sebagai bagian dari praktikum **Post-Test 1** mata kuliah Pemrograman Berorientasi Objek, dengan fokus pada penerapan konsep dasar OOP seperti **enkapsulasi**, **modularisasi kode**, dan operasi **CRUD** menggunakan ArrayList.
+Proyek ini dibuat sebagai bagian dari praktikum **Post-Test** mata kuliah Pemrograman Berorientasi Objek, dengan fokus pada penerapan konsep dasar OOP seperti **enkapsulasi**, **modularisasi kode**, dan operasi **CRUD** menggunakan ArrayList.
 
 ---
 
@@ -52,7 +52,7 @@ POSTTEST_1/
 Proyek ini menerapkan prinsip-prinsip OOP sebagai berikut:
 
 ### Enkapsulasi
-Setiap kelas menggunakan modifier `private` pada atributnya untuk keamanan data dan menyediakan akses secara terkontrol melalui method `getter` dan `setter`.
+Setiap kelas menggunakan modifier `private` serta sudah ditambahkan juga penggunaan `public`, `protected`, serta `Default` pada atributnya untuk keamanan data dan menyediakan akses secara terkontrol melalui method `getter` dan `setter`.
 
 ### Modularisasi
 Program dipisah menjadi beberapa entitas objek di dunia nyata (Roti, Bahan Baku, Pelanggan) agar kode lebih rapi dan mudah dikelola, tidak menumpuk menjadi satu proses prosedural.
@@ -64,12 +64,13 @@ Program dipisah menjadi beberapa entitas objek di dunia nyata (Roti, Bahan Baku,
 ### 1. `Roti.java`
 Merepresentasikan produk roti yang tersedia di etalase toko.
 
-| Atribut | Tipe | Keterangan |
-|---|---|---|
-| `idroti` | `String` | ID unik roti (format: `R-xxx`) |
-| `namaRoti` | `String` | Nama varian roti |
-| `harga` | `int` | Harga jual produk (Rupiah) |
-| `stok` | `int` | Ketersediaan roti |
+| Atribut         | Tipe     | Keterangan |
+|-----------------|----------|---|
+| `idroti`        | `String` | ID unik roti (format: `R-xxx`) |
+| `namaRoti`      | `String` | Nama varian roti |
+| `harga`         | `int`    | Harga jual produk (Rupiah) |
+| `stok`          | `int`    | Ketersediaan roti |
+| `Kode Produksi` | `String` | Ketersediaan roti |
 
 ### 2. `BahanBaku.java`
 Merepresentasikan persediaan bahan di dapur/gudang toko.
@@ -184,4 +185,3 @@ Pilih aksi: 2
 ## Contoh Screenshot Output
 
 <img src="assets/output_roti.png" alt="Output Roti" width="300"/>
-<img src="assets/output_roti2.png" alt="Output Roti" width="300"/>
